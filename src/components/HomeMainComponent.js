@@ -120,14 +120,10 @@ class HomeComponent extends Component {
               <Col sm="12">
                 {/*<h4 className="text-default">Home  <i className="fa fa-arrow-circle-o-down" /></h4><br />*/}
                 <h5 className="text-primary">
-                  Welcome to the CGYCA Solution.{" "}
+                  Welcome to the MHC Solution.{" "}
                 </h5>
                 <span className="text-default">
-                  The CGYCA Solution is an all-in-one system that tracks cadets,
-                  courses and budget information.<br />
-                  This home page gives you quick access notifications and key
-                  metrics, and provides you with the quick links to core
-                  functions of the system.
+                    Maryland Health Connection is the state's official health insurance marketplace where you can compare and enroll in health insurance, and access financial help to make coverage more affordable.
                 </span>
               </Col>
             </Row>

@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import ReactDOM from "react-dom";
 import logo from "logo.svg";
-import clientlogo from "images/cadetlogo.png";
-import bgImg from "images/cgyca_background.png";
+import mhclogo from "images/mhc.png";
+import clientlogo from "images/BuraqLogo.png";
+import bgImg from "images/truckbg.jpg";
+import bgWorldImg from "images/world.jpg";
 import "App.css";
 import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
@@ -41,7 +43,7 @@ const styles = {
     backgroundSize: "100%",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    backgroundColor: "#295878"
+    backgroundColor: "#262626"
   }
 };
 
@@ -51,13 +53,13 @@ const paperStyle = {
   margin: 20,
   textAlign: "center",
   display: "flex",
-  justifyContent: "center"
-};
+  justifyContent: "center",
+  backgroundColor: "rgba(230,190,140,0.5)"
+}
 
-const font11 = {
-  color: "#0b4981",
+const font11 = {  
   fontFamily: "Roboto,sans-serif",
-  fontSize: "14px"
+  fontSize: "16px"
 };
 
 class Login extends Component {
@@ -228,6 +230,7 @@ class Login extends Component {
            <img src={clientlogo} className="img-fluid"/>
      <img src={clientlogo} className="mx-auto"  />
     {this.props.authState.message == "ok" ? (<div style={font11}> Log on Succesfull </div>) : this.props.authState.message}
+     <h2 className="text-danger">Welcome to Buraq Systems</h2>
     */
 
     return (
@@ -241,12 +244,11 @@ class Login extends Component {
         >
           <div className="App">
             <div>
-              <img src={clientlogo} className="mx-auto my-2" />
-              <h2 className="text-danger">Welcome to Cadet Systems</h2>
+              <img src={mhclogo} className="mx-auto my-2" />             
             </div>
             <div className="d-flex justify-content-center">
               <Paper style={paperStyle} zDepth={5}>
-                <table style={{ cellSpacing: "20px" }} className="w-75">
+                <table style={{ cellSpacing: "20px"}} className="w-75">
                   <tbody>
                     <tr>
                       <td colSpan="2">
@@ -259,6 +261,8 @@ class Login extends Component {
                       </td>
                       <td style={font11}>
                         <TextField
+                           underlineShow={false}
+                           inputStyle={{ backgroundColor: "rgba(230,190,140,0.1)", fontSize: '16px', color:"black" }} 
                           ref={element => (this.txtUser = element)}
                           value={this.state.txtUser}
                           style={font11}
@@ -274,6 +278,8 @@ class Login extends Component {
                       </td>
                       <td style={font11}>
                         <TextField
+                        underlineShow={false}
+                         inputStyle={{ backgroundColor: "rgba(230,190,140,0.1)", fontSize: '16px', color:"black" }} 
                           id="txtPassword"
                           type="password"
                           ref={element => (this.txtPwd = element)}

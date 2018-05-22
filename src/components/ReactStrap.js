@@ -195,7 +195,7 @@ console.log(props)
             </Tab>
             <Tab
               style={tabStyles.default_tab}
-              label="Cadets"
+              label="About"
               value="1"
               icon={<FontIcon className="fa fa-home" style={{color:"darkgrey" }} />}
             >
@@ -205,7 +205,7 @@ console.log(props)
             </Tab>
             <Tab
               style={tabStyles.default_tab}
-              label="Staff and Budget"
+              label="Service"
               value="2"
               icon={<FontIcon className="fa fa-users" style={{color:"darkgrey" }}/>}
             >
@@ -213,7 +213,7 @@ console.log(props)
             </Tab>
             <Tab
               style={tabStyles.default_tab}
-              label="Course Schedule"
+              label="News"
               value="3"
               icon={<FontIcon className="fa fa-calendar" style={{color:"darkgrey" }}/>}
             >
@@ -221,7 +221,7 @@ console.log(props)
             </Tab>
             <Tab
               style={tabStyles.default_tab}
-              label="Approvals"
+              label="Media"
               value="4"
               icon={<FontIcon className="fa fa-check-circle" style={{color:"darkgrey" }}/>}
             >
@@ -229,7 +229,7 @@ console.log(props)
             </Tab>{" "}
             <Tab
               style={tabStyles.default_tab}
-              label="Reports"
+              label="Locations"
               value="5"
               icon={<FontIcon className="fa fa-line-chart" style={{color:"darkgrey" }}/>}
             >
@@ -237,7 +237,7 @@ console.log(props)
             </Tab>{" "}
             <Tab
               style={tabStyles.default_tab}
-              label="Admin"
+              label="Contact"
               value="6"
               icon={<FontIcon className="fa fa-cog" style={{color:"darkgrey" }}/>}
             >
